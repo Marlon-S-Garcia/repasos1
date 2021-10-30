@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="repasos1.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Ventana de Registro"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Label Text="Ingrese el nombre: " Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Ingrese el Monto Inicial: " Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtMonto" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Ingrese el nombre: " Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtNombre" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
